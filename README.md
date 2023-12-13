@@ -1,4 +1,4 @@
-![3](https://github.com/Dr-Groot/DGChat/assets/63160825/f0b62391-00df-48c4-b7e8-0b8198e6dd0a)# DGChat
+# DGChat
 
 Features:
 + Firebase Authentication
