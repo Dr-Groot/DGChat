@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mail Verification View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="mailVerificationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MailVerificationViewController" customModule="DGChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="Y6x-FE-TYh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="daS-xM-mMS">
+                                <rect key="frame" x="96.666666666666686" y="110.66666666666666" width="200" height="87"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="D1N-Jh-Ruz"/>
+                                    <constraint firstAttribute="height" constant="90" id="PSK-l0-Drg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xib-OK-93m">
+                                <rect key="frame" x="35" y="239" width="323" height="332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent email. Please check and click on the confirmation link to continue." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-3C-gsz">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="64.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify your email address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zu-YC-42Y">
+                                        <rect key="frame" x="0.0" y="79.666666666666686" width="323" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-Kh-9i6">
+                                        <rect key="frame" x="0.0" y="122.33333333333331" width="323" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to start using your DGChat account, you need to confirm your email address." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-Fy-QvJ">
+                                        <rect key="frame" x="0.0" y="137.33333333333331" width="323" height="64.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-Ux-Xle" customClass="GradientButton" customModule="DGChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="217" width="323" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FAT-Cc-44F"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Verify"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemMintColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapVerificationButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="f34-AW-LKZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2R-MM-3v1" customClass="GradientButton" customModule="DGChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="282" width="323" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GCD-de-ylt"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN OUT"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemMintColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSignOutButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T4h-IX-Aly"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Y6x-FE-TYh" secondAttribute="bottom" id="8Lo-I5-5Uo"/>
+                            <constraint firstItem="Y6x-FE-TYh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CZb-UU-N6u"/>
+                            <constraint firstItem="xib-OK-93m" firstAttribute="top" secondItem="daS-xM-mMS" secondAttribute="bottom" constant="40" id="Ok9-pX-bcm"/>
+                            <constraint firstItem="xib-OK-93m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="Sil-Vb-aAr"/>
+                            <constraint firstItem="Y6x-FE-TYh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Y3l-Hk-rrs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y6x-FE-TYh" secondAttribute="trailing" id="h5b-wD-Iic"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xib-OK-93m" secondAttribute="trailing" constant="35" id="j1Z-08-e5E"/>
+                            <constraint firstItem="daS-xM-mMS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="kr5-pN-xBn"/>
+                            <constraint firstItem="daS-xM-mMS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qhi-8w-yLP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mailVerificationSentNotificationLabel" destination="xcO-3C-gsz" id="35c-Bl-KZN"/>
+                        <outlet property="signOutButton" destination="L2R-MM-3v1" id="yiW-V0-36d"/>
+                        <outlet property="userEmailAddressLabel" destination="Mz8-Kh-9i6" id="olX-20-v4I"/>
+                        <outlet property="verifyButton" destination="PkZ-Ux-Xle" id="OFk-na-xmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+        <!--Verified View Controller-->
+        <scene sceneID="1G9-0u-ocl">
+            <objects>
+                <viewController storyboardIdentifier="verifiedVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L72-7G-IhQ" customClass="VerifiedViewController" customModule="DGChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z8j-m2-Bqs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="56F-aW-RIK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-NN-5To">
+                                <rect key="frame" x="46.666666666666657" y="350.33333333333331" width="300" height="151.33333333333331"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="9lS-wh-Wcp"/>
+                                    <constraint firstAttribute="height" constant="150" id="yrF-AT-yFl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERIFIED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-lQ-Adf">
+                                <rect key="frame" x="105" y="179" width="183" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-Pw-jP5" customClass="GradientButton" customModule="DGChat" customModuleProvider="target">
+                                <rect key="frame" x="35" y="631" width="323" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cou-6d-IVJ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Let's Go"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" systemColor="systemMintColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" systemColor="systemPurpleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapLetsGoButton:" destination="L72-7G-IhQ" eventType="touchUpInside" id="Q30-wq-yht"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N7e-4a-xcZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WQv-lQ-Adf" firstAttribute="centerX" secondItem="Z8j-m2-Bqs" secondAttribute="centerX" id="2ro-00-XYO"/>
+                            <constraint firstAttribute="bottom" secondItem="56F-aW-RIK" secondAttribute="bottom" id="3qT-R4-zQa"/>
+                            <constraint firstItem="b9E-Pw-jP5" firstAttribute="leading" secondItem="N7e-4a-xcZ" secondAttribute="leading" constant="35" id="7al-8A-SXa"/>
+                            <constraint firstItem="cIi-NN-5To" firstAttribute="centerX" secondItem="Z8j-m2-Bqs" secondAttribute="centerX" id="MEr-dG-9Qk"/>
+                            <constraint firstItem="WQv-lQ-Adf" firstAttribute="top" secondItem="N7e-4a-xcZ" secondAttribute="top" constant="120" id="O6E-KZ-6xL"/>
+                            <constraint firstItem="56F-aW-RIK" firstAttribute="top" secondItem="Z8j-m2-Bqs" secondAttribute="top" id="Zhk-MT-D15"/>
+                            <constraint firstItem="56F-aW-RIK" firstAttribute="leading" secondItem="N7e-4a-xcZ" secondAttribute="leading" id="ceB-Xp-xZm"/>
+                            <constraint firstItem="N7e-4a-xcZ" firstAttribute="trailing" secondItem="56F-aW-RIK" secondAttribute="trailing" id="jqB-MN-DmH"/>
+                            <constraint firstItem="b9E-Pw-jP5" firstAttribute="top" secondItem="cIi-NN-5To" secondAttribute="bottom" constant="130" id="nn4-Cv-jHQ"/>
+                            <constraint firstItem="N7e-4a-xcZ" firstAttribute="trailing" secondItem="b9E-Pw-jP5" secondAttribute="trailing" constant="35" id="rd5-mo-4Er"/>
+                            <constraint firstItem="cIi-NN-5To" firstAttribute="centerY" secondItem="Z8j-m2-Bqs" secondAttribute="centerY" id="uA5-Ux-Ue7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCQ-nm-tcq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084.7328244274809" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="L2R-MM-3v1">
+            <size key="intrinsicContentSize" width="102.66666666666667" height="34.333333333333336"/>
+        </designable>
+        <designable name="PkZ-Ux-Xle">
+            <size key="intrinsicContentSize" width="68" height="34.333333333333336"/>
+        </designable>
+        <designable name="b9E-Pw-jP5">
+            <size key="intrinsicContentSize" width="87.333333333333329" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background2" width="1080" height="1920"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

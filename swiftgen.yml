@@ -1,0 +1,41 @@
+output_dir: DGChat/Supporting Files/Generated/
+input_dir: DGChat
+
+colors:
+  inputs: Resources/Colors/Colors.json
+  outputs:
+    - templateName: swift5
+      output: DGColors.swift
+
+ib:
+  inputs: Resources/Storyboards
+  outputs:
+    - templateName: scenes-swift5
+      output: DGStoryboardScenes.swift
+    - templateName: segues-swift5
+      output: DGStoryboardSegues.swift
+
+strings:
+  inputs:
+   - Resources/Strings/Localizable.strings
+  outputs:
+   templatePath: DGChat/Resources/Templates/structured-swift5.stencil
+   output: DGStrings.swift
+
+xcassets:
+  inputs: Resources/Assets/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: DGImages.swift
+
+fonts:
+  inputs: Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: DGFonts.swift
+
+plist:
+  inputs: Resources/Plists
+  outputs:
+    templateName: runtime-swift5
+    output: DGConfig.swift

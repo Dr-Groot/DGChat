@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  DGChat
+
+  Created by Aman Pratap Singh on 01/10/23.
+  
+*/
+
+"welcomeMeAgainText" = "Welcome me again !!";
+"userOnboardedKey" = "UserOnboarded";
+"enterEmailText" = "Enter Email";
+"enterPasswordText" = "Enter Password";
+"enterFirstNameText" = "Enter First Name";
+"enterLastNameText" = "Enter Last Name";
+"forgotPasswordText" = "Forgot Password";
+"profilePictureKey" = "profile_picture_key";
+"selfEmailAddressKey" = "email";
+"userNameKey" = "name";

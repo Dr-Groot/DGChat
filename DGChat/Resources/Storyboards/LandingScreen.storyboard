@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="landingScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LandingScreenViewController" customModule="DGChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="RHn-CD-af1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DG_CHAT NoBG 4 W" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-kE-Wvn">
+                                <rect key="frame" x="0.0" y="78" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="jHQ-MD-9rw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MFy-Nc-sxN">
+                                <rect key="frame" x="35" y="458" width="344" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbG-AN-9ZL" customClass="GradientButton" customModule="DGChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tUt-0h-m1L"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN IN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemMintColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSignInButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HMs-1o-hty"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POD-lv-hRx" customClass="GradientButton" customModule="DGChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="344" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eTC-jG-6Ef"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SIGN UP"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemMintColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemPurpleColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapSignUpButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7VQ-aD-xtK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-tH-d21">
+                                <rect key="frame" x="35" y="628" width="344" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapWelcomeMeAgainButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vXR-wZ-st1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="MFy-Nc-sxN" firstAttribute="top" secondItem="OjI-kE-Wvn" secondAttribute="bottom" constant="80" id="0CE-aw-d4G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OjI-kE-Wvn" secondAttribute="trailing" id="4Ze-bT-Akb"/>
+                            <constraint firstAttribute="bottom" secondItem="RHn-CD-af1" secondAttribute="bottom" id="Dcd-oZ-XoV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hpI-tH-d21" secondAttribute="trailing" constant="35" id="H0F-ry-DCm"/>
+                            <constraint firstAttribute="trailing" secondItem="RHn-CD-af1" secondAttribute="trailing" id="Tw6-SF-RfK"/>
+                            <constraint firstItem="OjI-kE-Wvn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="cSf-0E-tYF"/>
+                            <constraint firstItem="RHn-CD-af1" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="hfA-DM-Qie"/>
+                            <constraint firstItem="RHn-CD-af1" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="mtA-QL-nVV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MFy-Nc-sxN" secondAttribute="trailing" constant="35" id="qkA-V4-cOz"/>
+                            <constraint firstItem="OjI-kE-Wvn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uPd-RM-fJL"/>
+                            <constraint firstItem="hpI-tH-d21" firstAttribute="top" secondItem="MFy-Nc-sxN" secondAttribute="bottom" constant="50" id="xiS-ae-Uh0"/>
+                            <constraint firstItem="hpI-tH-d21" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="xvo-N8-HmR"/>
+                            <constraint firstItem="MFy-Nc-sxN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="zvQ-Ue-Jjg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeMeAgainButton" destination="hpI-tH-d21" id="Pdv-Io-qB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="POD-lv-hRx">
+            <size key="intrinsicContentSize" width="90" height="34.5"/>
+        </designable>
+        <designable name="TbG-AN-9ZL">
+            <size key="intrinsicContentSize" width="84" height="34.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="DG_CHAT NoBG 4 W" width="500" height="500"/>
+        <image name="background2" width="1080" height="1920"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
